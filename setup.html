@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MacBook 初期セットアップ手順</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.8; }
+  h1 { border-bottom: 2px solid #e67e22; padding-bottom: 8px; }
+  h2 { color: #e67e22; }
+  h3 { color: #555; }
+  h4 { color: #777; }
+  table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+  th { background: #e67e22; color: #fff; padding: 10px 12px; text-align: left; }
+  td { padding: 10px 12px; border-bottom: 1px solid #ddd; }
+  code { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 0.95em; }
+  a { color: #e67e22; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 30px 0; }
+  ul, ol { padding-left: 24px; }
+  li { margin: 4px 0; }
+  strong { color: #c0392b; }
+  .back { margin-bottom: 20px; }
+  .back a { font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="00_動画編集手順_目次.html">&larr; 目次に戻る</a></div>
+
+<h1>MacBook 初期セットアップ手順</h1>
+<p>動画編集作業用 MacBook のセットアップ手順です。</p>
+
+<hr>
+
+<h2>1. MacBook 初期設定</h2>
+
+<h3>1-1. システム設定</h3>
+<ul>
+  <li>システム設定 &gt; トラックパッド &gt; タップでクリック：<strong>オン</strong></li>
+  <li>システム設定 &gt; キーボード &gt; 日本語入力の設定 &gt; ライブ変換：<strong>オフ</strong></li>
+</ul>
+
+<h3>1-2. マウス設定（LinearMouse）</h3>
+<p>動画編集はマウス操作が必須です。ワイヤレスマウスを貸し出します。</p>
+<p>Mac のデフォルトではマウスのスクロールに加速度がかかり操作しにくいため、<strong>LinearMouse</strong> をインストールして加速度を無効化します。</p>
+
+<h4>インストール</h4>
+<ol>
+  <li>公式サイトからダウンロード：<a href="https://linearmouse.app/">https://linearmouse.app/</a></li>
+  <li><code>.dmg</code> ファイルを開き、アプリケーションフォルダにドラッグ</li>
+  <li>初回起動時にアクセシビリティの許可を求められるので許可する
+    <ul><li>システム設定 &gt; プライバシーとセキュリティ &gt; アクセシビリティ &gt; LinearMouse を<strong>オン</strong></li></ul>
+  </li>
+  <li>LinearMouse を起動</li>
+</ol>
+
+<h4>設定（参考値）</h4>
+<p>以下はオーナーの設定値です。好みに応じて調整してください。</p>
+<ul>
+  <li><strong>ポインター</strong>
+    <ul>
+      <li>ポインター加速を無効にする：<strong>オフ</strong>（デフォルトのまま）</li>
+      <li>ポインターの加速：<strong>5</strong>（0-20）</li>
+      <li>ポインターの速度：<strong>0.075</strong>（0-1）</li>
+    </ul>
+  </li>
+  <li><strong>スクロール</strong>
+    <ul>
+      <li>逆スクロール：<strong>オフ</strong></li>
+      <li>スクロールモード：<strong>加速</strong></li>
+      <li>スクロールの加速：<strong>0.94</strong>（0-10、線形寄り）</li>
+      <li>スクロールの速さ：<strong>62.85</strong>（0-128）</li>
+    </ul>
+  </li>
+  <li><strong>一般</strong>
+    <ul>
+      <li>ログイン時に起動：<strong>オン</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<h3>1-3. Safari ブックマーク登録</h3>
+<p>以下をブックマークに追加しておく。</p>
+<table>
+  <tr><th>名前</th><th>URL</th></tr>
+  <tr><td>Gmail</td><td><a href="https://mail.google.com/">https://mail.google.com/</a></td></tr>
+  <tr><td>セットアップ手順書</td><td>（メールで共有）</td></tr>
+  <tr><td>Gemini</td><td><a href="https://gemini.google.com/">https://gemini.google.com/</a></td></tr>
+  <tr><td>YouTube Studio</td><td>（メールで共有）</td></tr>
+</table>
+
+<h3>1-4. Google ドライブの設定</h3>
+<p>動画素材やスライド資料は Google ドライブで共有します。</p>
+<ol>
+  <li>ブラウザ（Safari）で <a href="https://drive.google.com">Google ドライブ</a> にアクセス</li>
+  <li>指定の Google アカウントでログイン</li>
+  <li><strong>パソコン版 Google ドライブ</strong> をダウンロード・インストール
+    <ul><li><a href="https://www.google.com/intl/ja/drive/download/">https://www.google.com/intl/ja/drive/download/</a></li></ul>
+  </li>
+  <li>インストール後、Google ドライブが Finder のサイドバーに表示されることを確認</li>
+  <li>共有フォルダ（<code>50_ITパスポート解説配信</code>）にアクセスできることを確認</li>
+</ol>
+
+<h3>1-5. ヘッドホンの動作確認</h3>
+<p>動画編集では音声の確認が必要です。</p>
+<ol>
+  <li>有線ヘッドホンを接続</li>
+  <li>システム設定 &gt; サウンド &gt; 出力 でヘッドホンが認識されていることを確認</li>
+  <li>YouTube 等で音声が再生されることを確認</li>
+</ol>
+
+<h3>1-6. LINE のインストール</h3>
+<p>連絡用に LINE をインストールします。</p>
+<ol>
+  <li>App Store を開き「LINE」を検索してインストール</li>
+  <li>自分のアカウントでログイン</li>
+</ol>
+
+<h3>1-7. ビデオ会議の練習</h3>
+<p>LINE 電話または Google Meet で確認</p>
+
+<hr>
+
+<h2>2. DaVinci Resolve Studio セットアップ</h2>
+
+<h3>2-1. インストール</h3>
+<ol>
+  <li>下記 URL からダウンロード
+    <ul>
+      <li><a href="https://www.blackmagicdesign.com/jp/support/">https://www.blackmagicdesign.com/jp/support/</a></li>
+      <li><strong>Studio 版</strong>（有料版）をインストール ※ ライセンスキーは別途共有</li>
+    </ul>
+  </li>
+  <li><code>.dmg</code> ファイルを開く</li>
+  <li><code>Install Resolve</code> をダブルクリックしてインストーラーを実行</li>
+  <li>画面の指示に従ってインストール</li>
+  <li>インストール完了後、アプリケーションフォルダから DaVinci Resolve を起動</li>
+  <li>ライセンスキーを入力してアクティベーション</li>
+</ol>
+
+<h3>2-2. 初回起動時の設定</h3>
+<ol>
+  <li>初回起動時にクイックセットアップが表示される
+    <ul>
+      <li>システムのクイックチェック：<strong>Continue</strong></li>
+      <li>プロジェクトの保存場所：デフォルトのまま</li>
+    </ul>
+  </li>
+  <li>日本語 UI の確認
+    <ul>
+      <li>DaVinci Resolve &gt; Preferences &gt; User &gt; UI Settings</li>
+      <li>Language：<strong>日本語</strong>（変更後、再起動が必要）</li>
+    </ul>
+  </li>
+</ol>
+
+<h3>2-3. プロジェクト設定（推奨）</h3>
+<p>新規プロジェクト作成時に以下を設定：</p>
+<ul>
+  <li>ファイル &gt; プロジェクト設定（⇧ + 9）
+    <ul>
+      <li><strong>マスター設定</strong>
+        <ul>
+          <li>タイムライン解像度：<strong>1920 x 1080</strong>（フル HD）</li>
+          <li>タイムラインフレームレート：<strong>30</strong></li>
+          <li>再生フレームレート：<strong>30</strong></li>
+        </ul>
+      </li>
+      <li><strong>最適化メディアとレンダーキャッシュ</strong>
+        <ul>
+          <li>最適化メディアの解像度：<strong>Half</strong>（編集時の動作を軽くする）</li>
+          <li>レンダーキャッシュ：<strong>Smart</strong></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3>2-4. メディアストレージの設定</h3>
+<ul>
+  <li>DaVinci Resolve &gt; Preferences &gt; System &gt; Media Storage
+    <ul><li>Google ドライブのプロジェクトフォルダを追加しておくと素材の読み込みが楽になる</li></ul>
+  </li>
+</ul>
+
+<h3>2-5. ショートカットキーの設定</h3>
+<p><img src="images/shortcut_01.png" alt="ショートカット設定1" style="max-width:100%; margin:10px 0;"></p>
+<p><img src="images/shortcut_02.png" alt="ショートカット設定2" style="max-width:100%; margin:10px 0;"></p>
+
+<h3>2-6. 書き出し（デリバー）のプリセット</h3>
+<p>YouTube 用の書き出し設定：</p>
+<ul>
+  <li>デリバーページ
+    <ul>
+      <li>フォーマット：<strong>MP4</strong></li>
+      <li>コーデック：<strong>H.264</strong> または <strong>H.265</strong></li>
+      <li>解像度：<strong>1920 x 1080</strong></li>
+      <li>フレームレート：<strong>30</strong></li>
+      <li>品質：<strong>最高品質</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<hr>
+
+<h2>3. トラブルシューティング</h2>
+
+<h3>DaVinci Resolve が重い・カクカクする場合</h3>
+<ul>
+  <li>再生 &gt; プロキシモード &gt; <strong>Half Resolution</strong> に変更</li>
+  <li>タイムライン &gt; 最適化メディアを生成 を実行</li>
+</ul>
+
+<h3>Google ドライブの同期が遅い場合</h3>
+<ul>
+  <li>素材ファイルをローカル（デスクトップ等）にコピーしてから作業する</li>
+</ul>
+
+<h3>画面収録の許可が求められた場合</h3>
+<ul>
+  <li>システム設定 &gt; プライバシーとセキュリティ &gt; 画面収録 で DaVinci Resolve を許可</li>
+</ul>
+
+<div class="back" style="margin-top: 40px;"><a href="00_動画編集手順_目次.html">&larr; 目次に戻る</a></div>
+
+</body>
+</html>
